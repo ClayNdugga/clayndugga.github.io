@@ -1,0 +1,476 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+@font-face {
+  font-family: 'europa-regular';
+  src: url('https://clayndugga.github.io/styles/fonts/europa.woff2-webfont.woff2') format('woff2'),
+       url('https://clayndugga.github.io/styles/fonts/europa.woff2-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'europa-regular';
+}
+
+:root{
+  --color-grey0: #AAAAAA;
+  --color-grey1: #9C9C9C;
+  --color-grey2: #666666;
+  --color-black0: #111111;
+}
+
+span {
+  color: black;
+  font-weight: bold;
+}
+
+body {
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+.container {
+  max-width: 1200px;
+  /* padding: 1.5rem 1.5rem; */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+/* ------------------------------------------- header section begin ------------------------------------------*/
+
+header {
+  /* background: #181a1b; */
+  /* background-size: cover; */
+  margin-top: 60px;
+  min-height: 70vh;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav .nav-container {
+  /* position: relative; */
+  display: flex;
+
+  justify-content: space-around;
+}
+
+header nav .nav-container #logo {
+  text-decoration: none;
+  /* color: ; */
+}
+
+header nav .nav-container #logo h2{
+  font-family: 'Josefin Sans', sans-serif;  
+  /* font-family: 'Brandon Grotesque Bold', sans-serif; */
+  color: var(--color-black0);
+  font-size: 2rem;
+}
+
+header nav .nav-container #logo p{
+  color: var(--color-grey0);
+  font-size: 0.8rem;
+}
+
+header nav .nav-container #logo img {
+  width: 250px;
+}
+
+header nav .nav-container .nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-left: 2rem; */
+}
+
+header nav .nav-container .nav-links .list-entry{
+  margin-left: 30px;
+}
+
+
+header nav .nav-container .nav-links .list-entry .link{
+  text-decoration: none;
+  color: var(--color-grey1);
+}
+
+header nav .nav-container .nav-links .list-entry .link:hover{
+  color: var(--color-black0);
+}
+
+
+header .hero{
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  gap: 50px;
+  /* text-align: center; */
+}
+
+header .hero .hero-left{
+  /* width: 50%; */
+  width: 50rem;
+  justify-items: left;
+}
+
+header .hero .hero-left .name{
+  font-size: 3rem;
+}
+header .hero .hero-left .title{
+  color: var(--color-black0);
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+header .hero .hero-left .about{
+  color: var(--color-grey0);
+  font-size: 0.9rem;
+}
+
+header .hero .hero-left .about span{
+  color: var(--color-black0);
+  font-weight: lighter;
+}
+
+header .hero .hero-right {
+  width: 50%;
+  display: flex;
+}
+
+header .hero .hero-right img{
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  /* border-radius: 50%; */
+  
+}
+
+
+
+/* ------------------------------------------- header section end ------------------------------------------*/
+
+
+
+
+/* ------------------------------------------- experience section begin ------------------------------------------*/
+.experience {
+  background: white;
+  padding: 3rem 0;
+}
+
+.experience h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 2.5rem; 
+}
+
+.experience .container {
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .job {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  gap: 100px;
+}
+
+.experience .job .job-left {
+  width: 25%;
+  margin-right: 2rem;
+}
+
+.experience .job .job-left img {
+  width: 100%;
+  /* border: 1px solid lightgray; */
+}
+
+
+.experience .job .job-right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience .job .job-right .title {
+  font-size: 1.5rem;
+}
+
+.experience .job .job-right .subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-grey2)
+}
+
+.experience .job .job-right li{
+  color: var(--color-grey2);
+  padding: 0.2rem;
+}
+
+
+/* ------------------------------------------- experience section end ------------------------------------------*/
+
+
+
+/* ------------------------------------------- projects section begin ------------------------------------------*/
+ .projects {
+    background: white;
+    padding: 3rem 0;
+  }
+
+  .projects .container {
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 2.5rem; 
+  }
+  
+  .projects .project-row {
+    display: flex;
+    margin-bottom: 3rem;
+    /* gap: 5rem; */
+  }
+
+  .projects .project-row .project-left {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  
+  .projects .project-row .project-left img {
+    width: 100%;
+    /* border: 1px solid lightgray; */
+  }
+  
+  .projects .project-row .project-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .projects .project-row .project-right h3 {
+    font-size: 1.25rem;
+  }
+  .projects .project-row .project-right p{
+    color: var(--color-grey2)
+  }
+
+  .projects .project-row .project-right .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .projects .project-row .project-right .links #github:hover{
+    color: #f05133;
+    transition: 0.15s;
+  }
+
+
+  .projects .project-row .project-right .links button{
+    margin-right: 20px;
+    margin-top: 10px;
+    appearance: none;
+    background-color: #666666;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .projects .project-row .project-right .links button:hover{
+    background-color: #d310e1;
+    transition: 0.15s;
+  }
+  .projects .project-row .project-right span{
+    color: #d310e1;
+    font-weight: normal;
+    
+  }
+
+
+
+  .projects .project-row .project-right #github{
+    margin-top: 1rem;
+    color: var(--color-grey2);
+    font-size: 2rem;
+  }
+  
+  .projects .project-row .project-right .tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .projects .project-row .project-right .tech-stack-list p {
+    margin-right: 1rem;
+  }
+  
+  .projects .project-row .project-right .tech-stack-list li {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+
+/* ------------------------------------------- projects section end ------------------------------------------*/
+
+/* ------------------------------------------- education section begin ------------------------------------------*/
+.education {
+  background: white;
+  padding: 3rem 0;
+}
+
+ .education h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: 'Josefin Sans', sans-serif; 
+  font-size: 2.5rem; 
+ }
+
+.education .institution {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+  gap: 100px;
+}
+
+.education .institution .institution-left {
+  width: 25%;
+  margin-right: 2rem;
+}
+
+.education .institution .institution-left img {
+  width: 100%;
+  /* border: 1px solid lightgray; */
+}
+
+
+.education .institution .institution-right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education .institution .institution-right .title {
+  font-size: 1.25rem;
+}
+
+.education .institution .institution-right .subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-grey2)
+}
+
+.education .institution .institution-right li{
+  color: var(--color-grey2);
+  padding: 0.2rem;
+}
+
+/* .projects .project-row {
+  display: flex;
+  margin-bottom: 3rem;
+} */
+
+
+
+
+/* ------------------------------------------- education section end ------------------------------------------*/
+
+/* ------------------------------------------- media queries begin ------------------------------------------*/
+
+@media screen and (max-width: 860px) {
+
+  header .hero{
+    gap: 80px;
+  }
+
+  header .hero .hero-left{
+    width: 100%;
+  }
+
+
+
+  .experience .job {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+  .projects .project-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .projects .project-row .project-left {
+    width: 100%;
+  }
+
+  .projects .project-row .project-right {
+    width: 100%;
+
+  }
+
+
+
+
+
+
+ }
+
+
+
+ /* ------------------------------------------- media queries end ------------------------------------------*/
