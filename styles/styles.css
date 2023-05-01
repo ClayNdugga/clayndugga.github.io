@@ -270,7 +270,7 @@ header .hero .hero-right img{
   
   .projects .project-row .project-left img {
     width: 100%;
-    /* border: 1px solid lightgray; */
+    border: 1px solid lightgray;
   }
   
   .projects .project-row .project-right {
