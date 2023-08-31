@@ -161,7 +161,9 @@ header .hero .hero-right {
 header .hero .hero-right img{
   width: 100%;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 350px;
+  min-width: 200px;
+  /* max-width: 100%; */
   object-fit: contain;
   /* border-radius: 50%; */
   
@@ -300,7 +302,7 @@ header .hero .hero-right img{
 
 
   .projects .project-row .project-right .links button{
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 10px;
     appearance: none;
     background-color: #666666;
@@ -336,8 +338,6 @@ header .hero .hero-right img{
     
   }
 
-
-
   .projects .project-row .project-right #github{
     margin-top: 1rem;
     color: var(--color-grey2);
@@ -361,7 +361,85 @@ header .hero .hero-right img{
     font-size: 1.5rem;
   }
 
+
+
+
+
 /* ------------------------------------------- projects section end ------------------------------------------*/
+
+/* ------------------------------------------- popup section begin ------------------------------------------*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay .desc ul{
+  list-style-type: disc;
+  color: var(--color-grey2);
+}
+
+.overlay .desc li{
+  list-style-type: disc;
+  list-style-position: inside; 
+  color: var(--color-grey2);
+}
+
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+}
+
+.popup h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.popup p {
+  color: var(--color-grey2);
+  margin-bottom: 5px;
+
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #d310e1;
+}
+.popup .content {
+  max-height: 60%;
+  overflow: auto;
+}
+
+
+/* ------------------------------------------- popup section end ------------------------------------------*/
+
+
 
 /* ------------------------------------------- education section begin ------------------------------------------*/
 .education {
