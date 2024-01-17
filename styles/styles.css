@@ -150,12 +150,20 @@ header .hero .hero-left .title{
 header .hero .hero-left .about{
   color: var(--color-grey0);
   font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
 header .hero .hero-left .about span{
   color: var(--color-black0);
   font-weight: lighter;
 }
+
+header .hero .hero-left a{
+  color: #76b900;
+  font-size: 0.9rem;
+}
+
+
 
 header .hero .hero-right {
   width: 50%;
