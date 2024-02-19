@@ -29,6 +29,9 @@ html {
   --color-grey1: #9C9C9C;
   --color-grey2: #666666;
   --color-black0: #111111;
+  --color-purple: #76b900;
+  /* --color-purple: #d310e1; */
+  --color-green: #76b900;
 }
 
 span {
@@ -159,7 +162,7 @@ header .hero .hero-left .about span{
 }
 
 header .hero .hero-left a{
-  color: #76b900;
+  color: var(--color-green);
   font-size: 0.9rem;
 }
 
@@ -372,11 +375,11 @@ header .hero .hero-right img{
   }
 
   .projects .project-row .project-right .links button:hover{
-    background-color: #d310e1;
+    background-color: var(--color-purple);
     transition: 0.15s;
   }
   .projects .project-row .project-right span{
-    color: #d310e1;
+    color: var(--color-purple);
     font-weight: normal;
     
   }
