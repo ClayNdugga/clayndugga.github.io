@@ -266,6 +266,24 @@ header .hero .hero-right img{
   justify-content: center;
 }
 
+
+.experience .job .job-right .tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.experience .job .job-right .tech-stack-list p {
+  margin-right: 1rem;
+}
+
+.experience .job .job-right .tech-stack-list li {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
 .experience .job .job-right .title {
   font-size: 1.5rem;
 }
